@@ -1,0 +1,1 @@
+{"version":3,"names":["Eraser","props","MemoEraser","React","memo"],"sourceRoot":"../../src","sources":["Eraser.tsx"],"mappings":";;;;;;AAAA;AACA;AAAuD;AAAA;AAAA;AAAA;AAEvD,MAAMA,MAAM,GAAIC,KAAe,iBAC7B,6BAAC,uBAAG;EAAC,OAAO,EAAC;AAAW,GAAKA,KAAK,gBAChC,6BAAC,oBAAI;EAAC,CAAC,EAAC;AAAsK,EAAG,CAEpL;AAED,MAAMC,UAAU,gBAAGC,cAAK,CAACC,IAAI,CAACJ,MAAM,CAAC;AAAC,eACvBE,UAAU;AAAA"}
