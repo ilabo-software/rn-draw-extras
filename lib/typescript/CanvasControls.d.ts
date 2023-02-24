@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
-import { DrawingTool } from './types';
+import { DrawingTool } from './core';
 import { BrushPreviewProps } from './BrushPreview';
 export interface CanvasControlsProps extends BrushPreviewProps {
     /**

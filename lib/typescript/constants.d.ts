@@ -1,8 +1,4 @@
-import { DrawingTool } from './types';
 export declare const DEFAULT_COLORS: string[][][];
-export declare const DEFAULT_THICKNESS = 3;
-export declare const DEFAULT_OPACITY = 1;
-export declare const DEFAULT_TOOL = DrawingTool.Brush;
 export declare const DEFAULT_BRUSH_PREVIEW = "stroke";
 export declare const DEFAULT_OPACITY_STEP = 0.1;
 export declare const DEFAULT_THICKNESS_MIN = 5;
