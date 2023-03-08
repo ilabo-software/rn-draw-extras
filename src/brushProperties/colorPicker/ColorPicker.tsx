@@ -56,10 +56,12 @@ const ColorPicker: React.FC<ColorPickerProps> = ({
                   selected={color === buttonColor}
                   onPress={onColorChange}
                   isTopStart={rKey === 0 && colorKey === 0}
+                  // @ts-ignore
                   isTopEnd={rKey === 0 && colorKey === section[0].length - 1}
                   isBottomStart={rKey === section.length - 1 && colorKey === 0}
                   isBottomEnd={
                     rKey === section.length - 1 &&
+                    // @ts-ignore
                     colorKey === section[0].length - 1
                   }
                 />

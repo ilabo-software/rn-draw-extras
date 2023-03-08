@@ -21,6 +21,7 @@ export const isBright = (color: string): boolean => {
 
   // http://www.w3.org/TR/AERT#color-contrast
   const brightness = Math.round(
+    // @ts-ignore
     (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000
   );
 

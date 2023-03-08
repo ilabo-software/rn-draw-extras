@@ -79,36 +79,17 @@ const CanvasControls: React.FC<CanvasControlsProps> = ({
   <View style={styles.container}>
     <View style={styles.content}>
       <View style={styles.buttonsContainer}>
-        {onClear && (
-          <Button
-            onPress={onClear}
-            color={deleteButtonColor}
-            style={buttonStyle}
-          >
-            <Delete fill={deleteButtonColor} height={30} width={30} />
-          </Button>
-        )}
-        {onUndo && (
-          <View style={onClear && styles.endButton}>
+        {onToggleBrushProperties && color && (
+          <View style={onToggleEraser && styles.endButton}>
             <Button
-              onPress={onUndo}
-              color={otherButtonsColor}
+              onPress={onToggleBrushProperties}
+              color={color}
               style={buttonStyle}
             >
-              <Undo fill={otherButtonsColor} height={30} width={30} />
+              <Palette fill={color} height={30} width={30} />
             </Button>
           </View>
         )}
-      </View>
-
-      <BrushPreview
-        color={color}
-        opacity={opacity}
-        thickness={thickness}
-        brushPreview={brushPreview}
-      />
-
-      <View style={styles.buttonsContainer}>
         {onToggleEraser && (
           <Button
             onPress={onToggleEraser}
@@ -122,16 +103,35 @@ const CanvasControls: React.FC<CanvasControlsProps> = ({
             )}
           </Button>
         )}
-        {onToggleBrushProperties && color && (
-          <View style={onToggleEraser && styles.endButton}>
+      </View>
+
+      <BrushPreview
+        color={color}
+        opacity={opacity}
+        thickness={thickness}
+        brushPreview={brushPreview}
+      />
+
+      <View style={styles.buttonsContainer}>
+        {onUndo && (
+          <View style={onClear && styles.endButton}>
             <Button
-              onPress={onToggleBrushProperties}
-              color={color}
+              onPress={onUndo}
+              color={otherButtonsColor}
               style={buttonStyle}
             >
-              <Palette fill={color} height={30} width={30} />
+              <Undo fill={otherButtonsColor} height={30} width={30} />
             </Button>
           </View>
+        )}
+        {onClear && (
+          <Button
+            onPress={onClear}
+            color={deleteButtonColor}
+            style={buttonStyle}
+          >
+            <Delete fill={deleteButtonColor} height={30} width={30} />
+          </Button>
         )}
       </View>
     </View>

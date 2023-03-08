@@ -1,8 +1,6 @@
-# @benjeau/react-native-draw-extras
+# @ilabo/rn-draw-extras
 
-[![NPM badge](https://img.shields.io/npm/v/@benjeau/react-native-draw-extras)](https://www.npmjs.com/package/@benjeau/react-native-draw-extras) [![CircleCI Status](https://img.shields.io/circleci/build/gh/BenJeau/react-native-draw)](https://app.circleci.com/pipelines/github/BenJeau/react-native-draw) ![Platform badge](https://img.shields.io/badge/platform-android%20%7C%20ios%20%7C%20web-blue)
-
-Extra components to complement [@benjeau/react-native-draw](https://github.com/BenJeau/react-native-draw):
+Extra components to complement [@ilabo/rn-draw](https://github.com/BenJeau/react-native-draw):
 
 * `CanvasControls`
   * Clear drawing
@@ -22,9 +20,9 @@ Extra components to complement [@benjeau/react-native-draw](https://github.com/B
 ## Installation
 
 ```sh
-npm install @benjeau/react-native-draw-extras
+npm install @ilabo/rn-draw-extras
 # or
-yarn add @benjeau/react-native-draw-extras
+yarn add @ilabo/rn-draw-extras
 ```
 
 > Also, you need to install [@react-native-community/slider](https://github.com/callstack/react-native-slider) and [react-native-svg](https://github.com/react-native-svg/react-native-svg), and follow their installation instructions.

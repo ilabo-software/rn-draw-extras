@@ -109,6 +109,7 @@ const BrushProperties = forwardRef<BrushPropertiesRef, BrushPropertiesProps>(
     const height = useMemo(
       () =>
         (colors.length - 1) * 3 +
+        // @ts-ignore:
         (colors[0].length + colors[1].length) * colorButtonSize +
         SLIDERS_HEIGHT,
       [colors]
