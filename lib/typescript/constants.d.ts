@@ -1,7 +1,7 @@
 export declare const DEFAULT_COLORS: string[][][];
 export declare const DEFAULT_BRUSH_PREVIEW = "stroke";
 export declare const DEFAULT_OPACITY_STEP = 0.1;
-export declare const DEFAULT_THICKNESS_MIN = 5;
+export declare const DEFAULT_THICKNESS_MIN = 2;
 export declare const DEFAULT_THICKNESS_MAX = 35;
 export declare const DEFAULT_THICKNESS_STEP = 1;
 export declare const DEFAULT_SLIDER_COLOR = "#000";
