@@ -141,7 +141,7 @@ const BrushProperties = forwardRef<BrushPropertiesRef, BrushPropertiesProps>(
             )}
             {opacity && onOpacityChange && (
               <Slider
-                minimumValue={0}
+                minimumValue={0.1}
                 maximumValue={1}
                 step={opacityStep}
                 value={opacity}
